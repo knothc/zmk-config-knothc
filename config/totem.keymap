@@ -19,6 +19,56 @@
 
 #include "combos.dtsi"
 
+// Spanish keycode aliases
+#define ES_MORD &kp GRAVE  // º
+#define ES_1    &kp N1    // 1
+#define ES_2    &kp N2    // 2
+#define ES_3    &kp N3    // 3
+#define ES_4    &kp N4    // 4
+#define ES_5    &kp N5    // 5
+#define ES_6    &kp N6    // 6
+#define ES_7    &kp N7    // 7
+#define ES_8    &kp N8    // 8
+#define ES_9    &kp N9    // 9
+#define ES_0    &kp N0    // 0
+#define ES_QUOT &kp MINUS // '
+#define ES_IEXL &kp EQUAL // ¡
+#define ES_Q    &kp Q    // Q
+#define ES_W    &kp W    // W
+#define ES_E    &kp E    // E
+#define ES_R    &kp R    // R
+#define ES_T    &kp T    // T
+#define ES_Y    &kp Y    // Y
+#define ES_U    &kp U    // U
+#define ES_I    &kp I    // I
+#define ES_O    &kp O    // O
+#define ES_P    &kp P    // P
+#define ES_GRV  &kp LEFT_BRACKET // ` (dead)
+#define ES_PLUS &kp RIGHT_BRACKET // +
+#define ES_A    &kp A    // A
+#define ES_S    &kp S    // S
+#define ES_D    &kp D    // D
+#define ES_F    &kp F    // F
+#define ES_G    &kp G    // G
+#define ES_H    &kp H    // H
+#define ES_J    &kp J    // J
+#define ES_K    &kp K    // K
+#define ES_L    &kp L    // L
+#define ES_NTIL &kp SEMICOLON // Ñ
+#define ES_ACUT &kp QUOTE // ´ (dead)
+#define ES_CCED &kp NON_US_HASH // Ç
+#define ES_LABK &kp BACKSLASH // <
+#define ES_Z    &kp Z    // Z
+#define ES_X    &kp X    // X
+#define ES_C    &kp C    // C
+#define ES_V    &kp V    // V
+#define ES_B    &kp B    // B
+#define ES_N    &kp N    // N
+#define ES_M    &kp M    // M
+#define ES_COMM &kp COMMA // ,
+#define ES_DOT  &kp PERIOD  // .
+#define ES_MINS &kp SLASH // -
+
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)
 #define FWD &kp LG(RBKT)
@@ -101,12 +151,12 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
 // TODO: Add hyper key as HRM
     keymap {
         compatible = "zmk,keymap";
-        default_layer { // ColemakDHm
+        default_layer {
             bindings = <
-            &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U          &kp I            &kp O         &kp P 
-            &lt NAV A     &hml LCTRL S  &hml LALT D      &hml LGUI F      &kp G              &kp H         &hmr RGUI J    &hmr LALT K      &hmr LCTRL L  &hmr LSHFT O
- &kp TAB    &hml LSHFT Z  &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M     &hmr_meh MEH 0   &dot_morph    &qexcl        &kp TAB
-                                        &lt UTIL ESC     &kp LGUI    &lt FUN TAB        &lt NUM SPACE &kp RET        &lt FUN BSPC
+            &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U          &kp I              &kp O         &kp P 
+            &lt NAV A     &hml LCTRL S  &hml LALT D      &hml LGUI F      &kp G              &kp H         &hmr RGUI J    &hmr LALT K        &hmr LCTRL L  &hmr LSHFT SEMICOLON
+ &kp TAB    &hml LSHFT Z  &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M     &hmr_meh MEH COMMA &kp PERIOD    &kp SLASH                   &kp TAB
+                                        &lt UTIL ESC     &kp LGUI    &lt FUN TAB             &lt NUM SPACE &kp RET        &lt FUN BSPC
             >;
         };
         nav_layer { 

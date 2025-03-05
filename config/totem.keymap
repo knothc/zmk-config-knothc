@@ -67,7 +67,39 @@
 #define ES_M    &kp M    // M
 #define ES_COMM &kp COMMA // ,
 #define ES_DOT  &kp PERIOD  // .
-#define ES_MINS &kp SLASH // -
+#define ES_MINS &kp SLASH // - 
+
+#define ES_FORD &kp LS( GRAVE ) // ª
+#define ES_EXLM &kp LS( N1 )    // !
+#define ES_DQUO &kp LS( N2 )    // "
+#define ES_BULT &kp LS( N3 )    // ·
+#define ES_DLR  &kp LS( N4 )    // $
+#define ES_PERC &kp LS( N5 )    // %
+#define ES_AMPR &kp LS( N6 )    // &
+#define ES_SLSH &kp LS( N7 )    // /
+#define ES_LPRN &kp LS( N8 )    // (
+#define ES_RPRN &kp LS( N9 )    // )
+#define ES_EQL  &kp LS( N0 )    // =
+#define ES_QUES &kp LS( MINUS ) // ?
+#define ES_IQUE &kp LS( EQUAL ) // ¿
+#define ES_CIRC &kp LS( LEFT_BRACKET )  // ^ (dead)
+#define ES_ASTR &kp LS( RIGHT_BRACKET ) // *
+#define ES_DIAE &kp LS( QUOTE ) // ¨ (dead)
+#define ES_RABK &kp LS( BACKSLASH ) // >
+#define ES_SCLN &kp LS( COMMA ) // ;
+#define ES_COLN &kp LS( PERIOD )  // :
+#define ES_UNDS &kp LS( SLASH ) // _
+#define ES_BSLS &kp RA( GRAVE ) // (backslash)
+#define ES_PIPE &kp RA( N1 )    // |
+#define ES_AT   &kp RA( N2 )    // @
+#define ES_HASH &kp RA( N3 )    // #
+#define ES_TILD &kp RA( N4 )    // ~
+#define ES_EURO &kp RA( N5 )    // €
+#define ES_NOT  &kp RA( N6 )    // ¬
+#define ES_LBRC &kp RA( LEFT_BRACKET )  // [
+#define ES_RBRC &kp RA( RIGHT_BRACKET ) // ]
+#define ES_LCBR &kp RA( QUOTE ) // {
+#define ES_RCBR &kp RA( NON_US_HASH ) // }
 
 // navigation bindings for back/forward and prev tab/next tab
 #define BACK &kp LG(LBKT)

@@ -210,7 +210,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
           bindings = <
             ES_AT        ES_QUOT    &kp LBKT      &kp SQT        ES_PLUS        ES_PIPE       ES_LCBR       ES_RCBR       ES_EQL      &kp BSPC
             ___          ES_DQUO    ES_HASH       ES_DLR         ES_PERC        ES_AMPR       ES_LPRN       ES_RPRN       ES_SLSH     &kp RET
-      ___   ES_AT        ES_MINS    &kp GRAVE     ES_MINS        ES_MINS        ES_MINS       ES_MINS       ES_MINS       ES_MINS     ES_MINS    ___
+      ___   ES_AT        &kp GRAVE  &kp LS(GRAVE) ES_ASTR        ES_MINS        ES_NOT        ES_LBRC       ES_RBRC       ES_EXLM     ES_QUES     ___
                                     ___           &kp DOT        &kp SEMI       ___           ___           ___
             >;
         };

@@ -55,7 +55,7 @@
 #define ES_K    &kp K    // K
 #define ES_L    &kp L    // L
 #define ES_NTIL &kp SEMICOLON // Ñ
-#define ES_ACUT &kp QUOTE // ´ (dead)
+#define ES_ACUT &kp SQT // ´ (dead)  ?????????
 #define ES_CCED &kp NON_US_HASH // Ç
 #define ES_LABK &kp BACKSLASH // <
 #define ES_Z    &kp Z    // Z
@@ -84,7 +84,7 @@
 #define ES_IQUE &kp LS(EQUAL) // ¿
 #define ES_CIRC &kp LS(LEFT_BRACKET)  // ^ (dead)
 #define ES_ASTR &kp LS(RIGHT_BRACKET) // *
-#define ES_DIAE &kp LS(QUOTE) // ¨ (dead)
+#define ES_DIAE &kp LS(SQT) // ¨ (dead)   ?????????????????????
 #define ES_RABK &kp LS(BACKSLASH) // >
 #define ES_SCLN &kp LS(COMMA) // ;
 #define ES_COLN &kp LS(PERIOD)  // :
@@ -98,7 +98,7 @@
 #define ES_NOT  &kp RA(N6)    // ¬
 #define ES_LBRC &kp RA(LEFT_BRACKET)  // [
 #define ES_RBRC &kp RA(RIGHT_BRACKET) // ]
-#define ES_LCBR &kp RA(QUOTE) // {
+#define ES_LCBR &kp RA(SQT) // {   ??????????????????
 #define ES_RCBR &kp RA(NON_US_HASH) // }
 
 // navigation bindings for back/forward and prev tab/next tab
@@ -208,7 +208,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
         fun_layer {
           bindings = <
-            ES_AT        ES_QUOT    &kp LBKT      &kp SQT        ES_PLUS        ES_PIPE       ES_PIPE       ES_PIPE       ES_PIPE     &kp BSPC
+            ES_AT        ES_QUOT    &kp LBKT      &kp SQT        ES_PLUS        ES_PIPE       ES_LCBR       ES_RCBR       ES_EQL      &kp BSPC
             &kp N1       &kp N2     &kp N3        &kp N4         &kp N5         &kp N6        &kp N7        &kp N8        &kp N9      &kp N0
   &kp LPAR  &kp MINUS    &kp N1     &kp N2        &kp N3         &kp FSLH       ___           &kp HYP       &kp MEH       ___         ___       &kp RPAR
                                     ___           &kp DOT        &kp SEMI       ___           ___           ___
